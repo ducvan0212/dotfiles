@@ -1,0 +1,12 @@
+- xac dinh cu the version tung gem trong Gemfile
+- cai ruby bang rbenv
+- cai rails (chu y -v xac dinh cu the)
+- cai database, adapter
+- config database 
+  + tao user, pass giong ten user, pass trong rails config, co du permission
+  + tao database co ten giong trong rails config
+- gem capistrano de deploy. Capify. Config capistrano
+  + cai bundler gem, export PATH gem folder vao bash, them default env trong cap config
+  + check capistrano ..., theo cac lenh nhu trong tut
+  + chu y encode trong database la utf8 hay j. Nen de la utf8 de co the luu dc tieng viet
+- theo cac buoc cai nginx, config nginx dung rails app

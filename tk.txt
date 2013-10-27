@@ -1,0 +1,36 @@
+Saltstack 
+- State | SLS | Formula
+  - Quick install http://docs.saltstack.com/topics/installation/index.html
+  - install new package
+    - 'installed' in sls file
+    - install from ppa
+    - install 1 package: pkg, many packages: pkgs
+    - install by order < install by wait, required
+  - remove package
+
+  - init.sls 
+    /srv/salt # salt-call --local state.sls vannd => chay file init.sls trong folder vannd
+                                            vannd.absent => chay file absent.sls trong folder vannd
+    khong can thiet phai cd vao srv/salt
+
+  - ten state phai duy nhat trong toan he thong
+
+  - e.g: (state nay la state tu minh viet) 
+    mtr:
+      pkg:
+        - removed
+
+- Grains and pillar
+  - Grains: kien truc cpy, os j, architect, root user duong dan, ... thong tin co dinh cua may minion
+  - pillar: la variable cho vao state
+
+- State and module
+  - state o day la phan pkg, xem ref de viet tiep
+    - e.g
+      pkg:
+        - removed
+  - docs.saltstack.com/ref/states/all
+  - module: cau lenh truc tiep, remote execution
+
+- include state tu file khac vao
+  - e.g: include java
